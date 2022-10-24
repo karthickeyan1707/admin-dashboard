@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!--sanspro regular font link-->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <!--material icon link-->
+   
+    
+    <script src="https://kit.fontawesome.com/0d910965d3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    
+
+    
+
+
+    <!--link css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="template/css/all.css">
+
+</head>
+<body>
+
+        <!--side bar-->
+        <input type="checkbox" id="nav-toggle">
+        <div class="sidebar">
+            <div class="sidebar-brand">
+            <h2><span>ACME</span></h2>
+            </div>
+        
+<!--sidebar menu-->
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    
+                    <a href = "" class="active"> <span class="material-symbols-rounded">home</span>
+                    <span style="position: relative;">Home</span></a>
+                </li>
+                
+                <li>
+                    <a href=""><span class="material-symbols-outlined">grid_view</span>
+                    <span>Dashboard</span></a>
+                </li>
+             
+                <li>
+                    <a href=""><span class="material-symbols-outlined">mail</span>
+                    <span>Inbox</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="material-symbols-outlined">list_alt</span></i>
+                    <span>Products</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="material-symbols-rounded">settings</span>
+                    <span>Settings</span></a>
+                </li>
+            </ul>
+                    
+            
+        </div>
+        </div>
+
+<!--toggle content-->
+        <div class="main-content">
+            <header>
+                 
+                <h2>
+                    <label for="nav-toggle">
+                        <span class="las la-bars"></span>
+                    </label>
+                    
+                   
+                </h2>
+                
+                <div class="search-wrapper">
+                    <span class="material-symbols-sharp">search</span>
+                    <input type="search" placeholder="search here" />
+                </div>
+                
+
+                <div class="header-content">
+                <div class="notification">
+                    <span class="notify"></span>
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+                
+                
+                    
+                
+               
+                <div class="user-wrapper">
+                    <img src="images/profile-pic-01.jpg" width="40px" height="40px" alt="">
+                    <div>
+                        <h4>Maria</h4> 
+                    </div>
+                       
+                </div> 
+            </div>   
+            </header>
+        
+            <!--body content-->
+            <main>
+                <div class="page-header">
+                    <div>
+                        <h1>
+                            Overview
+                        </h1>
+                    </div>
+                    <div class="header-actions">
+                        <button>
+                            <h4>AddFunds <span><i class="fa-solid fa-plus"></i></span></h4>
+                            
+                        </button>
+                            
+                            
+                    </div>
+                </div>
+
+                <!--body chart-->
+                <div class="data">
+                    <div class="content-data">
+                        <div class="head">
+                        <h3>Statics</h3>
+                        <div class="menu">
+                            <h6>Last six months</h6><span class="material-symbols-rounded icon">expand_more</span>
+                            <ul class="menu-link">
+                                <li><a href="#">Last Three months</a></li>
+                                <li><a href="#">Last Two months</a></li>
+                                <li><a href="#">Last Onemonth</a></li>
+                            </ul>
+                        </div>
+                        </div>
+
+<!--douhnut chart-->
+
+                                <div class="chart">
+                                    <div id="chart"></div>
+                                </div>
+                            </div>
+                            <div class="content-data">
+                                <div class="head">
+                                    <h3>Sales Distribution</h3>
+                                </div>
+                                <canvas id="myChart">
+                             
+                            </canvas>
+                            </div>
+
+                
+<!--profile content-->
+                    <div class="content-data">
+                        <div id="profile">
+                            <span class="pro"></span>
+                                <img src="images/profile-pic-01.jpg" alt="">
+                                <h5 class="name">Maria</h5>
+                                <p class="country">Unaited state</p>
+                                <div class="social">
+
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    
+                                </div>
+                        </div>
+                        
+
+                    <div class="card-body">
+                        <h6>Our User</h6>
+                        <div class="customer">
+                            
+                            <div class="info">
+                                
+                            <img src="images/profile-pic-02.jpg" width="40px" height="40px" alt="">
+                            <div>
+                                <h4>Drew James</h4>
+                                <small>United States</small>
+                            </div>
+                            </div>
+                        
+                            <span>9042984842</span>
+                            </div>
+                        
+
+
+                            <div class="customer">
+                                <div class="info" >
+                                <img src="images/profile-pic-03.jpg" width="40px" height="40px" alt="">
+                            <div>
+                                <h4>Bavid Kames</h4>
+                                <small>United States</small>
+                            </div>
+                            </div>
+                            <div>
+                                <span>9042984842</span>
+                            </div>
+                            </div>
+                            
+
+
+                            <div class="customer">
+                                <div class="info">
+                                <img src="images/profile-pic-04.jpg" width="40px" height="40px" alt="">
+                            <div>
+                            
+                            <h4>Lavid Emes</h4>
+                            <small>United States</small>
+                            </div>
+                            </div>
+                            <div>
+                                <span>9042984842</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            
+
+                
+                
+                
+                
+                    
+                       
+                        <!--table content-->
+                          <div class="recent-gird">
+                            <div class="projects">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Referrer</h4>
+                                <button>See all<span class="las la-arrow-right"></span></button>
+
+                                    </div>
+                                    <div class="card-menu">
+                                       
+                                        
+                                        
+                                        <table width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <td>Location</td>
+                                                    <td>Views</td>
+                                                    <td>Sales</td>
+                                                    <td>Conversion</td>
+                                                    <td>Total</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Google</td>
+                                                    <td>3746</td>
+                                                    <td>752</td>
+                                                    <td>43%</td>
+                                                    <td>19,291</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Facebook</td>
+                                                    <td>1173</td>
+                                                    <td>645</td>
+                                                    <td>25%</td>
+                                                    <td>14,421</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Twitter</td>
+                                                    <td>8836</td>
+                                                    <td>645</td>
+                                                    <td>25%</td>
+                                                    <td>16,218</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>LinkedIn</td>
+                                                    <td>2739</td>
+                                                    <td>539</td>
+                                                    <td>20%</td>
+                                                    <td>12,370</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Whatsapp</td>
+                                                    <td>2548</td>
+                                                    <td>360</td>
+                                                    <td>58%</td>
+                                                    <td>10,501</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Direct E-mail</td>
+                                                    <td>3746</td>
+                                                    <td>752</td>
+                                                    <td>43%</td>
+                                                    <td>19,291</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    
+
+                             
+                             
+                            
+                                         
+                                    </div>
+
+                                </div>
+                            </div>
+                          </div>
+                          
+                          
+
+                            <!--video content-->
+
+                            <div class="videopage">
+                                <h3>Sample Product</h3>
+                            <video controls= loop autoplay muted>
+                                <source src="video/video.mp4.mp4" type="video/mp4">
+                            </video>
+                            </div>
+
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                
+            </main>
+        </div>
+          
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+        <script src="js/script.js"></script>
+</body>
+</html>
